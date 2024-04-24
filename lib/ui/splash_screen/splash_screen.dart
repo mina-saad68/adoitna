@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:adoitna/ui/home/homeScreen.dart';
+import 'package:adoitna/outh/login_screen.dart';
+import 'package:adoitna/outh/register_sccreen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -18,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 4), () {
-      Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
+      Navigator.of(context).pushReplacementNamed(LoginScreen.routeName);
     });
 
   }
