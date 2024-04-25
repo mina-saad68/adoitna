@@ -1,3 +1,4 @@
+import 'package:adoitna/firebase_options.dart';
 import 'package:adoitna/outh/login_screen.dart';
 import 'package:adoitna/outh/register_sccreen.dart';
 import 'package:adoitna/ui/home/homeScreen.dart';
@@ -8,18 +9,9 @@ import 'package:flutter/material.dart';
 void main  () async {
    WidgetsFlutterBinding.ensureInitialized();
    await Firebase.initializeApp(
-       options: FirebaseOptions(
-         apiKey: 'key',
-         appId: 'id',
-         messagingSenderId: 'sendid',
-         projectId: 'myapp',
-         storageBucket: 'myapp-b9yt18.appspot.com',
-       )
-   );
-  // await Firebase.initializeApp(
-  //
-  // //  options: DefaultFirebaseOptions.currentPlatform,
-  // );
+
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MyApp());
 }
 
